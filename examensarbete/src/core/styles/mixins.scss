@@ -1,0 +1,142 @@
+/* Boilerplate variables */
+
+/* COLORS */
+$primaryTextColor: #222;
+$primaryBg: #ccc;
+
+$colorBacon: #fbe9e9;
+$colorSnow: #f4f3f1f0;
+$colorAsh: #eeeeee;
+$colorAlert: #eb5757;
+$colorMint: #dbfbf0;
+$colorDarkMint: #489078;
+$colorClay: #605858;
+$colorCoal: #353131;
+$colorGray: #3531313d; // aka shade-24-dark
+$colorLightGray: #f1f0ec3d; // aka shade-24-light
+$colorMintMenu: #8ed8bf;
+
+/* MARGINS, PADDINGS, GAPS */
+
+$baseline: 16px;
+
+$padding-huge: calc($baseline * 2);
+$padding-large: calc($baseline * 1.5);
+$padding: $baseline;
+$padding-sml: calc($baseline / 2);
+$padding-nano: calc($baseline / 4);
+
+$margin-huge: calc($baseline * 2);
+$margin-large: calc($baseline * 1.5);
+$margin: $baseline;
+$margin-sml: calc($baseline / 2);
+$margin-nano: calc($baseline / 4);
+
+$gap-large: calc($baseline * 1.5);
+$gap: $baseline;
+$gap-sml: calc($baseline / 2);
+$gap-nano: calc($baseline / 4);
+
+/* EFFECTS */
+
+$radius-tier-1: 8px;
+$radius-tier-2: 4px;
+$radius-tier-3: 2px;
+$radius-tier-4: 50%;
+
+$shadow-sml: 0px 0px 1.2px rgba(0, 0, 0, 0.025),
+  0px 0px 3.3px rgba(0, 0, 0, 0.019), 0px 0px 10px rgba(0, 0, 0, 0.012),
+  0px 0px 17.9px rgba(0, 0, 0, 0.009);
+
+$shadow-medium: 0px 0px 3.2px rgba(0, 0, 0, 0.035),
+  0px 0px 7.3px rgba(0, 0, 0, 0.029), 0px 0px 20px rgba(0, 0, 0, 0.022),
+  0px 0px 40.9px rgba(0, 0, 0, 0.019);
+
+$shadow-large: 0px 0px 2.2px rgba(0, 0, 0, 0.015),
+  0px 0px 5.3px rgba(0, 0, 0, 0.021), 0px 0px 10px rgba(0, 0, 0, 0.009),
+  0px 0px 17.9px rgba(0, 0, 0, 0.019), 0px 0px 33.4px rgba(0, 0, 0, 0.042),
+  0px 0px 80px rgba(0, 0, 0, 0.2);
+
+/* RESPONSIVE */
+$mobileBreakpoint: 480px;
+$tabletBreakpoint: 640px;
+
+/* HELPERS */
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $gap-sml;
+}
+
+@mixin columnBasic {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin row {
+  display: flex;
+  flex-direction: row;
+  gap: $gap;
+}
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gap;
+}
+
+@mixin circle {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  border-radius: $radius-tier-4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Open+Sans:wght@500&family=Oswald:wght@200&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  //font-family: 'Cairo', sans-serif;
+  font-family: "Fira Sans", sans-serif;
+}
+
+$base: 16px;
+
+@mixin fontsizeExtraLarge {
+  font-size: calc($base * 2); // 32px
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+@mixin fontsizeLarge {
+  font-size: calc($base * 1.5); // 24px
+  line-height: 120%;
+}
+
+@mixin fontsizeRegular {
+  font-size: $base;
+  line-height: 140%;
+}
+
+@mixin fontsizeRegularSmall {
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 400;
+}
+
+@mixin fontsizeSmall {
+  font-size: calc($base * 0.75); // 12px
+  line-height: 120%;
+}

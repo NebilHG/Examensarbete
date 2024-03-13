@@ -1,0 +1,6 @@
+@use "./../../core/styles/mixins.scss" as *;
+
+.nav {
+  background-color: $primaryBg;
+  @include row;
+}

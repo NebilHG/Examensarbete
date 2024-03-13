@@ -1,0 +1,9 @@
+@use "./../../core/styles/mixins.scss" as *;
+
+.body {
+  background-color: $primaryBg;
+  @include row;
+
+  //display: flex;
+  //flex-direction: row;
+}
