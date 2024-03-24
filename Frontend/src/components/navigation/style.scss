@@ -1,0 +1,13 @@
+@use "./../../core/styles/mixins.scss" as *;
+
+.nav {
+  background-color: $primaryBg;
+  @include row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}

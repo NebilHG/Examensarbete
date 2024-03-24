@@ -1,0 +1,7 @@
+@use "./../../core/styles/mixins.scss" as *;
+
+.landing {
+  h1 {
+    background-color: $primaryBg;
+  }
+}
