@@ -1,12 +1,4 @@
-@use "./../../core/styles/mixins.scss" as *;
-
-.landing {
-  h1 {
-    background-color: $primaryBg;
-  }
-}
-
-.landing img {
+.product img {
   width: 300px; /* Adjust this value as needed */
   height: 300px; /* Adjust this value as needed */
   object-fit: cover; /* Ensures the image covers the specified dimensions */
